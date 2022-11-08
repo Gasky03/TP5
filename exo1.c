@@ -10,14 +10,14 @@
  */
 int Lecture(char *ch, int NbCarMax)
 {
+  int nb = 1;
     scanf("%c",ch);
-    NbCarMax = 1;
-    while (*ch!='\0')
+    while ((*ch!='\n')&&(nb<NbCarMax))
     {
         scanf("%c",ch);
-        ++ NbCarMax;
+        ++ nb;
     }
-    return NbCarMax;
+    return nb;
 }
 
 
